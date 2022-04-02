@@ -1,0 +1,31 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em que vuelvan los milicos 
+
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id diam eu ligula eleifend dapibus. Etiam luctus tincidunt ante, eget blandit turpis mattis ac. Sed maximus nisi sed magna convallis mollis. Etiam a venenatis massa, et efficitur ligula. Donec id ipsum consequat, efficitur ligula a, posuere mi.
+                p Pellentesque non hendrerit neque, at imperdiet nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Mauris mollis, massa ut imperdiet porta, neque sem gravida leo, scelerisque cursus elit eros ut felis. Mauris in feugiat erat. Aliquam sem metus, iaculis varius ultricies non, commodo id turpis.
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+        include ./layout/bloque_viajes
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Mayo de 2023 - 28 de Mayo de 2023
+                        p.precio $2500 USD
+    
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
